@@ -1,13 +1,28 @@
+import { Head } from "next/document";
 import Link from "next/link";
-import Layout from "../components/Layout";
+import Companies from "../components/Companies";
+import Contact from "../components/Contact";
+import CTA from "../components/CTA";
+import Features from "../components/Features";
+import Hero from "../components/Hero";
+import JoinUs from "../components/JoinUs";
+import Services from "../components/Services";
+import Stats from "../components/Stats";
+import Team from "../components/Team";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello DAL CSL</h1>
-    <p>
-      <Link href="/about">About</Link>
-    </p>
-  </Layout>
-);
+const IndexPage = () => {
+  return (
+    <div>
+      <Hero />
+      <CTA />
+      <Companies />
+      <Features />
+      <Stats />
+      <Team />
+      <JoinUs />
+      {/* <Contact /> */}
+    </div>
+  );
+};
 
 export default IndexPage;
