@@ -1,4 +1,23 @@
+import Link from "next/link";
+import {
+  AiFillGithub,
+  AiOutlineInstagram,
+  AiOutlineLinkedin,
+} from "react-icons/ai";
+
 const people = [
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
   {
     name: "Leslie Alexander",
     role: "Co-Founder / CEO",
@@ -33,41 +52,55 @@ const people = [
 
 export default function Team() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Meet our leadership
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
-            elementum enim vitae ullamcorper suspendisse.
-          </p>
+    <div className="flex flex-col mt-8">
+      <div className="container max-w-7xl px-4">
+        <div className="flex flex-wrap justify-center text-center mb-12">
+          <div className="w-full lg:w-6/12 px-4">
+            <h1 className="text-gray-900 text-4xl font-bold mb-4">
+              Meet the Team
+            </h1>
+
+            <p className="text-gray-700 text-lg font-light">
+              With over 100 years of combined experience, we've got a
+              well-seasoned team at the helm.
+            </p>
+          </div>
         </div>
-        <ul
-          role="list"
-          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
-        >
+
+        <div className="flex flex-wrap justify-center">
           {people.map((person) => (
-            <li key={person.name}>
-              <div className="flex items-center gap-x-6">
+            <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-8 sm:px-6 lg:px-4 py-8">
+              <div className="flex flex-col items-center">
                 <img
-                  className="h-16 w-16 rounded-full"
-                  src={person.imageUrl}
-                  alt=""
+                  className="rounded-full w-1/2 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                  src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80"
                 />
-                <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    {person.name}
-                  </h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">
-                    {person.role}
-                  </p>
+
+                <div className="text-center mt-6">
+                  <h1 className="text-gray-900 text-lg font-bold mb-1">
+                    Tranter Jaskulski
+                  </h1>
+
+                  <h4 className="text-gray-700 text-md font-light mb-2">
+                    Founder & Specialist
+                  </h4>
+
+                  <div className="flex items-center justify-center duration-300">
+                    <Link href="">
+                      <AiOutlineLinkedin className="h-6 w-6 m-1" />
+                    </Link>
+                    <Link href="">
+                      <AiOutlineInstagram className="h-6 w-6 m-1" />
+                    </Link>
+                    <Link href="">
+                      <AiFillGithub className="h-6 w-6 m-1" />
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

@@ -24,9 +24,7 @@ export default function CTA() {
           </svg>
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Boost your productivity.
-              <br />
-              Start using our app today.
+              Learn how to solve complex problems
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
@@ -50,7 +48,7 @@ export default function CTA() {
           <div className="relative mt-16 h-80 lg:mt-8">
             <img
               className="absolute top-0 left-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+              src="/assets/leetcode.webp"
               alt="App screenshot"
               width={1824}
               height={1080}

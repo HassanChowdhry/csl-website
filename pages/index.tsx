@@ -14,12 +14,12 @@ const IndexPage = () => {
   return (
     <div>
       <Hero />
-      <CTA />
       <Companies />
-      <Features />
-      <Stats />
+      <CTA />
       <Team />
+      <Stats />
       <JoinUs />
+      {/* <Features />  */}
       {/* <Contact /> */}
     </div>
   );
