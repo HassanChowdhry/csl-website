@@ -6,7 +6,10 @@ import {
 
 export default function Content() {
   return (
-    <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div
+      className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      id="about"
+    >
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
           className="absolute top-0 left-[max(50%,25rem)] h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -43,15 +46,17 @@ export default function Content() {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600">
-                Deploy faster
+                About us
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                A better workflow
+                Better Coding
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                id at vitae feugiat egestas.
+                This society aims to provide an environment for students to
+                explore and deepen their understanding of computer science
+                fundamentals, data structures, algorithms, cloud computing,
+                systems design, networks, problem-solving, and real-world
+                applications.
               </p>
             </div>
           </div>
@@ -59,7 +64,7 @@ export default function Content() {
         <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
             className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+            src="/assets/c-code.png"
             alt=""
           />
         </div>
@@ -67,12 +72,11 @@ export default function Content() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                varius sit neque erat velit. Faucibus commodo massa rhoncus,
-                volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id.
+                The society will provide a platform for students to collaborate,
+                share knowledge, and work on projects related to these topics.
+                The society will also conduct workshops, seminars, and talks by
+                industry experts to help students learn about the latest
+                developments in computer science.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
@@ -82,11 +86,11 @@ export default function Content() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      Push to deploy.
+                      Some cool function
                     </strong>{" "}
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    The society aims to provide students with practical
+                    experience by working on projects relevant to the field and
+                    providing opportunities for internships and co-op positions.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -96,10 +100,10 @@ export default function Content() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      SSL certificates.
+                      Another
                     </strong>{" "}
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo.
+                    One of the main goals of this society is to create leaders
+                    for the future.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -109,30 +113,28 @@ export default function Content() {
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      Database backups.
+                      One more function
                     </strong>{" "}
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    The society is open to all students regardless of their
+                    major and welcomes anyone who is interested in computer
+                    science and wants to learn more about the field.
                   </span>
                 </li>
               </ul>
               <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
+                By providing students with the opportunity to gain knowledge and
+                skills that will be valuable in their future careers, this
+                society will give students the tools they need to succeed in the
+                competitive field of computer science and become future leaders
+                in the field.
               </p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                No server? No problem.
+                No resources? No problem.
               </h2>
               <p className="mt-6">
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
+                We believe that this society will be beneficial for students by
+                providing them with the opportunity to gain knowledge and skills
+                that will be valuable in their future careers.
               </p>
             </div>
           </div>

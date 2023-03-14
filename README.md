@@ -1,47 +1,9 @@
-# TypeScript Next.js example
+# Dalhousie Computer Science Leaders
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+This society aims to provide an environment for students to explore and deepen their understanding of computer science fundamentals, data structures, algorithms, cloud computing, systems design, networks, problem-solving, and real-world applications. The society will provide a platform for students to collaborate, share knowledge, and work on projects related to these topics.
 
-## Deploy your own
+The society will also conduct workshops, seminars, and talks by industry experts to help students learn about the latest developments in computer science. Additionally, the society aims to provide students with practical experience by working on projects relevant to the field and providing opportunities for internships and co-op positions.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+One of the main goals of this society is to create leaders for the future. By providing students with the opportunity to gain knowledge and skills that will be valuable in their future careers, this society will give students the tools they need to succeed in the competitive field of computer science and become future leaders in the field.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
-
-## How to use it?
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-```
-
-```bash
-yarn create next-app --example with-typescript with-typescript-app
-```
-
-```bash
-pnpm create next-app --example with-typescript with-typescript-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```
-npm install --save-dev typescript
-```
-
-To enable TypeScript's features, we install the type declarations for React and Node.
-
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
-
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+The society is open to all students regardless of their major and welcomes anyone who is interested in computer science and wants to learn more about the field. I believe that this society will be beneficial for students by providing them with the opportunity to gain knowledge and skills that will be valuable in their future careers.

@@ -1,6 +1,6 @@
 export default function Companies() {
   return (
-    <div className="bg-white py-2 sm:py-24">
+    <div className="bg-white pb-2 sm:pb-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex flex-wrap justify-center text-center">
           <div className="w-full lg:w-6/12 px-4">

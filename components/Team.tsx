@@ -52,7 +52,7 @@ const people = [
 
 export default function Team() {
   return (
-    <div className="flex flex-col mt-8">
+    <div className="flex flex-col mt-8 items-center" id="team">
       <div className="container max-w-7xl px-4">
         <div className="flex flex-wrap justify-center text-center mb-12">
           <div className="w-full lg:w-6/12 px-4">
