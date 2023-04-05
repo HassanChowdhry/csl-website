@@ -51,12 +51,12 @@ export default function Content() {
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Better Coding
               </h1>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
-                This society aims to provide an environment for students to
-                explore and deepen their understanding of computer science
-                fundamentals, data structures, algorithms, cloud computing,
-                systems design, networks, problem-solving, and real-world
-                applications.
+              <p className="mt-6 text-base leading-8 text-gray-700">
+                The Dalhousie Computer Science Leaders Society provides an
+                environment for students to explore and deepen their
+                understanding of computer science fundamentals: problem-solving,
+                data structures, algorithms, cloud computing, systems design,
+                and real-world applications.
               </p>
             </div>
           </div>
@@ -70,20 +70,23 @@ export default function Content() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
+            <h2 className="mb-4 text-2xl font-bold tracking-tight text-gray-900">
+              No resources? No problem.
+            </h2>
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <p>
-                The society will provide a platform for students to collaborate,
-                share knowledge, and work on projects related to these topics.
-                The society will also conduct workshops, seminars, and talks by
-                industry experts to help students learn about the latest
-                developments in computer science.
+                We conduct workshops, seminars, talks by industry experts, and
+                weekly competitive programming contests to equip students with
+                the most cutting-edge knowledge in computer science, ensuring
+                their skills remain at the forefront of the latest developments
+                in the field.
               </p>
-              <ul role="list" className="mt-8 space-y-8 text-gray-600">
+              {/* <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <CloudArrowUpIcon
+                   <CloudArrowUpIcon
                     className="mt-1 h-5 w-5 flex-none text-indigo-600"
                     aria-hidden="true"
-                  />
+                  /> 
                   <span>
                     <strong className="font-semibold text-gray-900">
                       Some cool function
@@ -120,21 +123,17 @@ export default function Content() {
                     science and wants to learn more about the field.
                   </span>
                 </li>
-              </ul>
+              </ul> */}
               <p className="mt-8">
-                By providing students with the opportunity to gain knowledge and
-                skills that will be valuable in their future careers, this
-                society will give students the tools they need to succeed in the
-                competitive field of computer science and become future leaders
-                in the field.
+                Additionally, we provide students with practical experience by
+                working on projects relevant to the field which helps them land
+                opportunities for internships and co-op positions.
               </p>
-              <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                No resources? No problem.
-              </h2>
+
               <p className="mt-6">
-                We believe that this society will be beneficial for students by
-                providing them with the opportunity to gain knowledge and skills
-                that will be valuable in their future careers.
+                The main goal of this society is to create leaders for the
+                future. We give students the tools they need to succeed in the
+                competitive field of computer science and become future leaders.
               </p>
             </div>
           </div>

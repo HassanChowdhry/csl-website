@@ -7,44 +7,56 @@ import {
 
 const people = [
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
+    name: "Sebastian Dionicio",
+    role: "President",
     imageUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
+    name: "Anas Malvat",
+    role: "Vice-president",
     imageUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
+    name: "Anaam Chodhury",
+    role: "Treasurer",
     imageUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
+    name: "Nathanael Bowley",
+    role: "Events co-ordinator",
     imageUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
+    name: "Vansh Sood",
+    role: "Lead web manager",
     imageUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
+    name: "Nupur Gaikwad",
+    role: "Primary consultant",
     imageUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
+    name: "Khushi Singh",
+    role: "Social Media manager and Marketing coordinator",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Falilou",
+    role: "Graphic designer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Dhruvi Shah",
+    role: "Social media manager and Marketing coordinator",
     imageUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
@@ -69,7 +81,7 @@ export default function Team() {
 
         <div className="flex flex-wrap justify-center">
           {people.map((person) => (
-            <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-8 sm:px-6 lg:px-4 py-8">
+            <div className="w-full md:w-6/12 lg:w-4/12 mb-6 px-8 sm:px-6 lg:px-4 py-8">
               <div className="flex flex-col items-center">
                 <img
                   className="rounded-full w-1/2 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
@@ -78,14 +90,14 @@ export default function Team() {
 
                 <div className="text-center mt-6">
                   <h1 className="text-gray-900 text-lg font-bold mb-1">
-                    Tranter Jaskulski
+                    {person.name}
                   </h1>
 
                   <h4 className="text-gray-700 text-md font-light mb-2">
-                    Founder & Specialist
+                    {person.role}
                   </h4>
 
-                  <div className="flex items-center justify-center duration-300">
+                  {/* <div className="flex items-center justify-center duration-300">
                     <Link href="">
                       <AiOutlineLinkedin className="h-6 w-6 m-1" />
                     </Link>
@@ -95,7 +107,7 @@ export default function Team() {
                     <Link href="">
                       <AiFillGithub className="h-6 w-6 m-1" />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

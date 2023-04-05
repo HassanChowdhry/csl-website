@@ -70,10 +70,22 @@ export default function JoinUs() {
             Come code with us
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            Follow us on Instagram and Linkedin to join us at the events!
           </p>
+          <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+            <a
+              href="https://www.linkedin.com/company/dal-csl/"
+              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Linkedin
+            </a>
+            <a
+              href="https://www.instagram.com/dalcsl/"
+              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Instagram
+            </a>
+          </div>
         </div>
       </div>
     </div>

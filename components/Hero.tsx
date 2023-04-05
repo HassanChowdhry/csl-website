@@ -22,11 +22,11 @@ export default function Hero() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Dalhousie CSL</span>
-              <img
+              {/* <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
-              />
+              /> */}
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -70,11 +70,11 @@ export default function Hero() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
+                {/* <img
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                   alt=""
-                />
+                /> */}
               </a>
               <button
                 type="button"
@@ -153,9 +153,7 @@ export default function Hero() {
               The ONLY society that teaches you to crack coding interviews
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              Learn how to crack coding interviews and getting your dream job
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
