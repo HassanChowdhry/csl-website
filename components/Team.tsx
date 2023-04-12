@@ -9,56 +9,47 @@ const people = [
   {
     name: "Sebastian Dionicio",
     role: "President",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    imageUrl: "/assets/team/seb.jpeg",
   },
   {
     name: "Anas Malvat",
     role: "Vice-president",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    imageUrl: "/assets/team/anas.jpeg",
   },
   {
     name: "Anaam Chodhury",
     role: "Treasurer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    imageUrl: "/assets/team/anam.jpeg",
   },
   {
     name: "Nathanael Bowley",
     role: "Events co-ordinator",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    imageUrl: "/assets/team/nat.jpeg",
   },
   {
     name: "Vansh Sood",
     role: "Lead web manager",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    imageUrl: "/assets/team/vansh.jpeg",
   },
   {
     name: "Nupur Gaikwad",
     role: "Primary consultant",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Khushi Singh",
-    role: "Social Media manager and Marketing coordinator",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    imageUrl: "/assets/team/nupur.jpeg",
   },
   {
     name: "Falilou",
     role: "Graphic designer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    imageUrl: "/assets/team/moh.jpeg",
+  },
+  {
+    name: "Khushi Singh",
+    role: "Social Media manager and Marketing coordinator",
+    imageUrl: "/assets/team/khushi.jpeg",
   },
   {
     name: "Dhruvi Shah",
     role: "Social media manager and Marketing coordinator",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    imageUrl: "/assets/team/dhruvi.jpeg",
   },
 ];
 
@@ -85,7 +76,12 @@ export default function Team() {
               <div className="flex flex-col items-center">
                 <img
                   className="rounded-full w-1/2 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                  src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80"
+                  src={person.imageUrl}
+                  style={{
+                    height: "225px",
+                    width: "225px",
+                    objectFit: "cover",
+                  }}
                 />
 
                 <div className="text-center mt-6">
