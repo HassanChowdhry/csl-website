@@ -10,6 +10,7 @@ import JoinUs from "../components/JoinUs";
 import Services from "../components/Services";
 import Stats from "../components/Stats";
 import Team from "../components/Team";
+import UserForm from "../components/UserForm";
 
 const IndexPage = () => {
   return (

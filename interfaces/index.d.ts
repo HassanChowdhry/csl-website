@@ -3,3 +3,9 @@ export type Post = {
   title: string;
   description: string;
 };
+
+export type User = {
+  name: String;
+  email: String;
+  program: String;
+};

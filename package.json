@@ -7,6 +7,8 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.316.0",
+    "@aws-sdk/lib-dynamodb": "^3.316.0",
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.16",
     "next": "latest",

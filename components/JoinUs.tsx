@@ -1,3 +1,5 @@
+import UserForm from "./UserForm";
+
 const links = [
   { name: "Open roles", href: "#" },
   { name: "Internship program", href: "#" },
@@ -8,7 +10,7 @@ const links = [
 export default function JoinUs() {
   return (
     <div
-      className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32"
+      className="relative isolate flex overflow-hidden bg-gray-900 py-24 sm:py-32"
       id="contact"
     >
       <img
@@ -87,6 +89,9 @@ export default function JoinUs() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="w-3/5">
+        <UserForm />
       </div>
     </div>
   );
