@@ -5,7 +5,7 @@ export default function Companies() {
         <div className="flex flex-wrap justify-center text-center">
           <div className="w-full lg:w-6/12 px-4">
             <h1 className="text-gray-900 text-4xl font-bold mb-4">
-              Work at these companies
+              Our members have gotten offers from these companies
             </h1>
 
             <p className="text-gray-700 text-lg font-light">
