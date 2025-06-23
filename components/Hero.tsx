@@ -6,7 +6,10 @@ const navigation = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Team", href: "#team" },
+  { name: "Events", href: "#events" },
+  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "#contact" },
+  { name: "Discord", href: "#discord" },
 ];
 
 export default function Hero() {
@@ -14,19 +17,15 @@ export default function Hero() {
 
   return (
     <div className="bg-white" id="home">
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header className="sticky top-0 bg-white/70 backdrop-blur z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Dalhousie CSL</span>
-              {/* <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              /> */}
+          <div className="flex lg:flex-1 items-center">
+            <a href="#" className="flex items-center space-x-2">
+              <img src="/assets/leetcode.webp" alt="Logo" className="h-8 w-8" />
+              <span className="font-semibold text-gray-900">Dal CSL</span>
             </a>
           </div>
           <div className="flex lg:hidden">

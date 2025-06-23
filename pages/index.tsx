@@ -11,6 +11,12 @@ import Services from "../components/Services";
 import Stats from "../components/Stats";
 import Team from "../components/Team";
 import UserForm from "../components/UserForm";
+import MockInterviews from "../components/MockInterviews";
+import ICPC from "../components/ICPC";
+import UpcomingEvents from "../components/UpcomingEvents";
+import LatestUpdates from "../components/LatestUpdates";
+import DiscordInvite from "../components/DiscordInvite";
+import Testimonials from "../components/Testimonials";
 
 const IndexPage = () => {
   return (
@@ -18,8 +24,14 @@ const IndexPage = () => {
       <Hero />
       <Companies />
       <Content />
+      <MockInterviews />
+      <ICPC />
       <CTA />
+      <UpcomingEvents />
+      <Testimonials />
       <Team />
+      <LatestUpdates />
+      <DiscordInvite />
       {/* <Stats /> */}
       <JoinUs />
       {/* <Features />  */}

@@ -72,38 +72,21 @@ export default function Team() {
 
         <div className="flex flex-wrap justify-center">
           {people.map((person) => (
-            <div className="w-full md:w-6/12 lg:w-4/12 mb-6 px-8 sm:px-6 lg:px-4 py-8">
-              <div className="flex flex-col items-center">
+            <div
+              key={person.name}
+              className="w-full md:w-6/12 lg:w-4/12 mb-6 px-8 sm:px-6 lg:px-4 py-8"
+            >
+              <div className="group relative flex flex-col items-center">
                 <img
-                  className="rounded-full w-1/2 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                  className="rounded-md w-full h-72 object-cover"
                   src={person.imageUrl}
-                  style={{
-                    height: "225px",
-                    width: "225px",
-                    objectFit: "cover",
-                  }}
+                  alt={person.name}
                 />
-
-                <div className="text-center mt-6">
-                  <h1 className="text-gray-900 text-lg font-bold mb-1">
-                    {person.name}
-                  </h1>
-
-                  <h4 className="text-gray-700 text-md font-light mb-2">
-                    {person.role}
-                  </h4>
-
-                  {/* <div className="flex items-center justify-center duration-300">
-                    <Link href="">
-                      <AiOutlineLinkedin className="h-6 w-6 m-1" />
-                    </Link>
-                    <Link href="">
-                      <AiOutlineInstagram className="h-6 w-6 m-1" />
-                    </Link>
-                    <Link href="">
-                      <AiFillGithub className="h-6 w-6 m-1" />
-                    </Link>
-                  </div> */}
+                <div
+                  className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <h3 className="text-white text-lg font-bold">{person.name}</h3>
+                  <p className="text-white text-sm">{person.role}</p>
                 </div>
               </div>
             </div>
