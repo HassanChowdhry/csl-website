@@ -1,12 +1,3 @@
-import UserForm from "./UserForm";
-
-const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
-];
-
 export default function JoinUs() {
   return (
     <div
@@ -91,7 +82,7 @@ export default function JoinUs() {
         </div>
       </div>
       <div className="w-3/5">
-        <UserForm />
+        {/* <UserForm /> */}
       </div>
     </div>
   );

@@ -1,115 +1,83 @@
+"use client";
+
 import Link from "next/link";
 import {
   AiFillGithub,
   AiOutlineInstagram,
   AiOutlineLinkedin,
 } from "react-icons/ai";
+import { DirectionAwareHover } from "./ui/direction-aware-hover";
+import LargeGridBackground from "./wrapper/LargeGridBackground";
 
 const people = [
   {
     name: "Sebastian Dionicio",
     role: "President",
     imageUrl: "/assets/team/seb.jpeg",
+    linkedin: "https://linkedin.com/in/sebastian-dionicio",
   },
   {
     name: "Anas Malvat",
     role: "Vice-president",
     imageUrl: "/assets/team/anas.jpeg",
-  },
-  {
-    name: "Anaam Chodhury",
-    role: "Treasurer",
-    imageUrl: "/assets/team/anam.jpeg",
-  },
-  {
-    name: "Nathanael Bowley",
-    role: "Events co-ordinator",
-    imageUrl: "/assets/team/nat.jpeg",
+    linkedin: "https://linkedin.com/in/anas-malvat",
   },
   {
     name: "Vansh Sood",
     role: "Lead web manager",
     imageUrl: "/assets/team/vansh.jpeg",
-  },
-  {
-    name: "Nupur Gaikwad",
-    role: "Primary consultant",
-    imageUrl: "/assets/team/nupur.jpeg",
+    linkedin: "https://linkedin.com/in/vansh-sood",
   },
   {
     name: "Falilou",
     role: "Graphic designer",
     imageUrl: "/assets/team/moh.jpeg",
-  },
-  {
-    name: "Khushi Singh",
-    role: "Social Media manager and Marketing coordinator",
-    imageUrl: "/assets/team/khushi.jpeg",
-  },
-  {
-    name: "Dhruvi Shah",
-    role: "Social media manager and Marketing coordinator",
-    imageUrl: "/assets/team/dhruvi.jpeg",
+    linkedin: "https://linkedin.com/in/falilou",
   },
 ];
 
 export default function Team() {
   return (
-    <div className="flex flex-col mt-8 items-center" id="team">
-      <div className="container max-w-7xl px-4">
-        <div className="flex flex-wrap justify-center text-center mb-12">
-          <div className="w-full lg:w-6/12 px-4">
-            <h1 className="text-gray-900 text-4xl font-bold mb-4">
-              Meet the Team
-            </h1>
-
-            <p className="text-gray-700 text-lg font-light">
-              With over 100 years of combined experience, we've got a
-              well-seasoned team at the helm.
-            </p>
-          </div>
+    <LargeGridBackground className="flex flex-col items-center bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0" id="team">
+      <div className="container max-w-7xl px-4 relative">
+        <div className="mx-auto max-w-2xl lg:text-center mb-16">
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">Our Team</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Meet the Team
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Backed by solid experience across multiple industries, our team brings the right mix of insight and execution.
+          </p>
         </div>
 
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center gap-8">
           {people.map((person) => (
-            <div className="w-full md:w-6/12 lg:w-4/12 mb-6 px-8 sm:px-6 lg:px-4 py-8">
-              <div className="flex flex-col items-center">
-                <img
-                  className="rounded-full w-1/2 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                  src={person.imageUrl}
-                  style={{
-                    height: "225px",
-                    width: "225px",
-                    objectFit: "cover",
-                  }}
-                />
-
-                <div className="text-center mt-6">
-                  <h1 className="text-gray-900 text-lg font-bold mb-1">
-                    {person.name}
-                  </h1>
-
-                  <h4 className="text-gray-700 text-md font-light mb-2">
-                    {person.role}
-                  </h4>
-
-                  {/* <div className="flex items-center justify-center duration-300">
-                    <Link href="">
-                      <AiOutlineLinkedin className="h-6 w-6 m-1" />
-                    </Link>
-                    <Link href="">
-                      <AiOutlineInstagram className="h-6 w-6 m-1" />
-                    </Link>
-                    <Link href="">
-                      <AiFillGithub className="h-6 w-6 m-1" />
-                    </Link>
-                  </div> */}
-                </div>
-              </div>
+            <div key={person.name} className="mb-6 group">
+              <Link href={person.linkedin} target="_blank" rel="noopener noreferrer" className="block">
+                <DirectionAwareHover 
+                  imageUrl={person.imageUrl}
+                  className="cursor-pointer transition-transform duration-300"
+                >
+                  <div className="flex flex-col">
+                    <h1 className="text-white text-lg font-bold mb-1 drop-shadow-lg">
+                      {person.name}
+                    </h1>
+                    <h4 className="text-white text-md font-light mb-3 drop-shadow-lg">
+                      {person.role}
+                    </h4>
+                    <div className="flex items-center gap-2">
+                      <AiOutlineLinkedin className="h-5 w-5 text-white drop-shadow-lg" />
+                      <span className="text-white text-sm font-medium drop-shadow-lg">
+                        Connect on LinkedIn
+                      </span>
+                    </div>
+                  </div>
+                </DirectionAwareHover>
+              </Link>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </LargeGridBackground>
   );
 }
