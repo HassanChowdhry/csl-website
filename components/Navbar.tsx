@@ -12,7 +12,7 @@ const navigation = [
   { name: "Services", href: "#services", icon: Trophy },
   { name: "Team", href: "#team", icon: Users },
   { name: "Testimonials", href: "#testimonials", icon: Star },
-  { name: "Blog", href: "/blog", icon: BookOpen },
+  // { name: "Blog", href: "/blog", icon: BookOpen },
 ];
 
 export default function Navbar() {

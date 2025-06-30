@@ -37,16 +37,16 @@ const achievements = [
 
 export default function Stats() {
   return (
-    <div className="bg-white/10 rounded-lg p-6">
-      <h3 className="text-lg font-semibold text-white mb-6">Our Achievements</h3>
-      <div className="grid grid-cols-2 gap-6">
+    <div className="bg-white/10 rounded-lg p-4 sm:p-6">
+      <h3 className="text-base sm:text-lg font-semibold text-white mb-4 sm:mb-6">Our Achievements</h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6">
         {achievements.map((achievement) => (
-          <div key={achievement.id} className="flex items-center gap-x-4 p-3 bg-white/5 rounded-lg border border-white/10 hover:bg-white/15 transition-all duration-300">
-            <achievement.icon className={`h-6 w-6 ${achievement.color} flex-shrink-0`} aria-hidden="true" />
-            <div>
-              <div className="text-lg font-bold text-white">{achievement.value}</div>
-              <div className="text-sm text-indigo-200 font-medium">{achievement.name}</div>
-              <div className="text-xs text-indigo-300 mt-1">{achievement.description}</div>
+          <div key={achievement.id} className="flex items-center gap-x-3 sm:gap-x-4 p-3 bg-white/5 rounded-lg border border-white/10 hover:bg-white/15 transition-all duration-300">
+            <achievement.icon className={`h-5 w-5 sm:h-6 sm:w-6 ${achievement.color} flex-shrink-0`} aria-hidden="true" />
+            <div className="min-w-0 flex-1">
+              <div className="text-base sm:text-lg font-bold text-white truncate">{achievement.value}</div>
+              <div className="text-xs sm:text-sm text-indigo-200 font-medium truncate">{achievement.name}</div>
+              <div className="text-xs text-indigo-300 mt-1 line-clamp-2">{achievement.description}</div>
             </div>
           </div>
         ))}

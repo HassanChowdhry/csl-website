@@ -9,7 +9,7 @@ const services = [
     name: "Technical Interviews",
     description: "Practice with real technical interview questions and get personalized feedback from experienced developers.",
     icon: Code,
-    calendlyLink: "https://calendly.com/your-link/technical-interview",
+    // calendlyLink: "https://calendly.com/your-link/technical-interview",
     color: "from-blue-500 to-cyan-500",
     bgColor: "bg-blue-50",
   },
@@ -17,7 +17,7 @@ const services = [
     name: "Behavioral Interviews",
     description: "Master the art of behavioral interviews with our structured approach and expert guidance.",
     icon: MessageSquare,
-    calendlyLink: "https://calendly.com/your-link/behavioral-interview",
+    // calendlyLink: "https://calendly.com/your-link/behavioral-interview",
     color: "from-green-500 to-emerald-500",
     bgColor: "bg-green-50",
   },
@@ -25,7 +25,7 @@ const services = [
     name: "System Design Interviews",
     description: "Learn to design scalable systems and ace your system design interviews with hands-on practice.",
     icon: Target,
-    calendlyLink: "https://calendly.com/your-link/system-design",
+    // calendlyLink: "https://calendly.com/your-link/system-design",
     color: "from-purple-500 to-pink-500",
     bgColor: "bg-purple-50",
   },
@@ -33,7 +33,7 @@ const services = [
     name: "ICPC Training",
     description: "Prepare for competitive programming contests with our specialized ICPC training program.",
     icon: Trophy,
-    calendlyLink: "https://calendly.com/your-link/icpc-training",
+    // calendlyLink: "https://calendly.com/your-link/icpc-training",
     color: "from-orange-500 to-red-500",
     bgColor: "bg-orange-50",
   },
@@ -137,7 +137,6 @@ export default function Services() {
           </dl>
         </motion.div>
         
-        {/* Call to action */}
         <motion.div 
           className="mt-16 text-center"
           initial={{ opacity: 0, y: 20 }}

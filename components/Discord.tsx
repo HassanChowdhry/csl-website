@@ -19,7 +19,7 @@ const features = [
   },
   {
     name: "Competition Prep",
-    description: "Dedicated channels for ICPC, hackathons, and competitive programming.",
+    description: "Dedicated channels for ICPC, Codeforces and any other competitive programming.",
     icon: Trophy,
   },
 ];
