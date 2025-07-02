@@ -14,25 +14,31 @@ const people = [
     name: "Sebastian Dionicio",
     role: "President",
     imageUrl: "/assets/team/seb.jpeg",
-    linkedin: "https://linkedin.com/in/sebastian-dionicio",
+    linkedin: "https://www.linkedin.com/in/sebastian-dionicio-017a8b200/",
   },
   {
-    name: "Anas Malvat",
+    name: "Hassan Chowdhry",
     role: "Vice-president",
-    imageUrl: "/assets/team/anas.jpeg",
-    linkedin: "https://linkedin.com/in/anas-malvat",
+    imageUrl: "/assets/team/hassan.jpeg",
+    linkedin: "https://www.linkedin.com/in/hassanchowdhry/",
+  },
+  {
+    name: "Hoang Le",
+    role: "Vice-president",
+    imageUrl: "/assets/team/hoang.jpeg",
+    linkedin: "https://www.linkedin.com/in/hoang-harold-le/",
   },
   {
     name: "Vansh Sood",
     role: "Lead web manager",
     imageUrl: "/assets/team/vansh.jpeg",
-    linkedin: "https://linkedin.com/in/vansh-sood",
+    linkedin: "https://linkedin.com/in/vanshsood",
   },
   {
     name: "Falilou",
     role: "Graphic designer",
     imageUrl: "/assets/team/moh.jpeg",
-    linkedin: "https://linkedin.com/in/falilou",
+    linkedin: "https://www.linkedin.com/in/mouhamadou-falilou-niang-a0aba8172/",
   },
 ];
 

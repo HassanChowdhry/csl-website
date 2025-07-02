@@ -6,21 +6,21 @@ import GradientBackground from "./wrapper/GradientBackground";
 const testimonials = [
   {
     quote: "CSL's mock interview program completely transformed my interview preparation. The personalized feedback and real-world scenarios helped me ace my Google interview. I can't recommend it enough!",
-    name: "Sarah Chen",
-    designation: "Software Engineer at Google",
+    name: "John Doe",
+    designation: "Software Engineer",
     src: "/assets/team/seb.jpeg",
   },
   {
     quote: "The ICPC training sessions were incredible. I went from struggling with basic algorithms to competing at a national level. The community support here is unmatched.",
-    name: "Michael Rodriguez",
-    designation: "Senior Developer at Amazon",
-    src: "/assets/team/anas.jpeg",
+    name: "John Doe",
+    designation: "Software Engineer",
+    src: "/assets/team/hassan.jpeg",
   },
   {
     quote: "Joining CSL was the best decision I made in college. The system design workshops and behavioral interview prep gave me the confidence I needed to succeed.",
-    name: "Emily Watson",
-    designation: "Frontend Engineer at Meta",
-    src: "/assets/team/moh.jpeg",
+    name: "John Doe",
+    designation: "Software Engineer",
+    src: "/assets/team/hoang.jpeg",
   },
 ];
 
