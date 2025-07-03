@@ -1,0 +1,25 @@
+name: Sync Fork on Webhook Push
+
+on:
+  repository_dispatch:
+    types: [upstream_push]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Add upstream
+        run: git remote add upstream https://github.com/DalCSL/csl-website.git
+
+      - name: Sync fork
+        run: |
+          git fetch upstream
+          git checkout main
+          git merge upstream/main
+          git push origin main
