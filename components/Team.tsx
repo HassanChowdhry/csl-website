@@ -30,14 +30,26 @@ const people = [
   },
   {
     name: "Vansh Sood",
-    role: "Lead web manager",
+    role: "Software Engineer",
     imageUrl: "/assets/team/vansh.jpeg",
     linkedin: "https://linkedin.com/in/vanshsood",
+  },
+  {
+    name: "Huy Huyn",
+    role: "Software Engineer",
+    imageUrl: "/assets/team/huy.jpg",
+    linkedin: "https://www.linkedin.com/in/mouhamadou-falilou-niang-a0aba8172/",
   },
   {
     name: "Falilou",
     role: "Graphic designer",
     imageUrl: "/assets/team/moh.jpeg",
+    linkedin: "https://www.linkedin.com/in/mouhamadou-falilou-niang-a0aba8172/",
+  },
+  {
+    name: "Tobi",
+    role: "Advisor",
+    imageUrl: "/assets/team/tobi.jpg",
     linkedin: "https://www.linkedin.com/in/mouhamadou-falilou-niang-a0aba8172/",
   },
 ];
